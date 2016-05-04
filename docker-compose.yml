@@ -39,7 +39,6 @@ services:
         - ./build/sql:/docker-entrypoint-initdb.d
         - ./tmp/db:/var/lib/mysql
       environment:
-        - EXCLUDE_PORTS=3306
         - MYSQL_DATABASE=world
         - MYSQL_ROOT_PASSWORD=password
 
@@ -50,5 +49,3 @@ services:
         - mysql:db
       ports:
         - 8080:80
-      environment:
-        - EXCLUDE_PORTS=8080
