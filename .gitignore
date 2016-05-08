@@ -1,0 +1,8 @@
+.classpath
+.loadpath
+.DS_Store
+.settings/
+.idea/*
+
+tmp/*
+!tmp/.gitkeep
